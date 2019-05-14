@@ -1,0 +1,39 @@
+/* colors: https://colorhunt.co/palette/145446 */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  background-color: #373a6d;
+}
+
+ul {
+  height: 5vh;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+#welcome-section, #projects, #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
