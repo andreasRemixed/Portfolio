@@ -1,11 +1,24 @@
 /* colors: https://colorhunt.co/palette/145446 */
 
+/* GERNERAL */
 
 * {
   margin: 0;
   padding: 0;
   font-family: 'Cutive Mono', monospace;
 }
+
+#welcome-section, #projects, #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+
+/* NAVIGATION */
+
 
 ul {
   display: flex;
@@ -18,36 +31,38 @@ ul {
   list-style: none;
 }
 
- a {
+ ul a {
   color: #373a6d;
   text-decoration: none;
   margin: 0 30px;
   font-size: 1.6rem;
 }
 
-#welcome-section, #projects, #contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
+ul a:hover {
+  text-decoration: underline;
 }
+
+/* WELCOME-SECTION */
+
 
 #welcome-section {
   background-image: url(/Users/andreas/Documents/FCC/Portfolio/hero.jpg);
-  /*background-color: #ff8246;*/
   background-blend-mode: multiply;
 }
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 10em;
+  font-size: 15vw;
   padding: 0 3vw;
   color: white;
-  background: linear-gradient(48deg, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0.7) 59%);
+  background: linear-gradient(45deg, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0.7) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+/* PROJECT-SECTION */
+
 
 #projects {
   justify-content: space-between;
@@ -55,21 +70,23 @@ h1 {
   background-color: rgba(236, 236, 236, 1);
   padding: 4vw;
   height: auto;
-  text-align: center;
 }
 
 span {
   font-size: 3rem;
 }
+
 h2 {
   font-family: 'Cutive Mono', monospace;
   flex: 1 1 8000px;
   margin: 2vh 0px;
-  color: #ff8246;
+  color: rgba(236, 236, 236, 1);
 }
 
-#contact {
-  background-color: #373a6d;
+#projects>h2 {
+  background: linear-gradient(45deg, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0.7) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .project-tile {
@@ -80,15 +97,57 @@ h2 {
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
   margin: 5vh 2.5vw 0px 1vw;
   align-content: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: transparent;
 }
 
 .project-tile:hover {
-  background: linear-gradient(48deg, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0.7) 59%);
+  background: linear-gradient(45deg, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0.7) 50%);
   background-blend-mode: overlay;
   cursor: pointer;
+  color: white;
 }
+
 
 .tile-1 {
   background: url(/Users/andreas/Documents/FCC/Portfolio/projects1.jpg);
   background-position: center;
+}
+.tile-2 {
+  background: url(/Users/andreas/Documents/FCC/Portfolio/projects2.jpg);
+  background-position: center;
+}
+.tile-3 {
+  background: url(/Users/andreas/Documents/FCC/Portfolio/projects3.jpg);
+  background-position: center;
+}
+.tile-4 {
+  background: url(/Users/andreas/Documents/FCC/Portfolio/projects4.jpg);
+  background-position: center;
+}
+.tile-5 {
+  background: url(/Users/andreas/Documents/FCC/Portfolio/projects5.jpg);
+  background-position: center;
+}
+.tile-6 {
+  background: url(/Users/andreas/Documents/FCC/Portfolio/projects6.jpg);
+  background-position: center;
+}
+
+
+/* CONTACT-SECTION */
+
+
+#contact {
+  background-color: #373a6d;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+img {
+  text-align: center;
+  width: 15vw;
 }
