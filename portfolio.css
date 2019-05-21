@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   height: 100vh;
   text-align: center;
 }
@@ -20,18 +21,24 @@
 /* NAVIGATION */
 
 
+#navbar {
+
+  position: fixed;
+
+}
+
 ul {
-  display: flex;
+	display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  width: 100vw;
+	list-style: none;
+	width: 100vw;
   height: 10vh;
   background-color: rgba(236, 236, 236, 1);
-  list-style: none;
 }
 
  ul a {
+	display: inline;
   color: #373a6d;
   text-decoration: none;
   margin: 0 30px;
@@ -90,13 +97,15 @@ h2 {
 }
 
 .project-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1 1 400px;
   height: 43vh;
   background-color: #beeef7;
   border-radius: 3px;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
   margin: 5vh 2.5vw 0px 1vw;
-  align-content: center;
   font-size: 1.6rem;
   text-decoration: none;
   color: transparent;
@@ -113,26 +122,38 @@ h2 {
 .tile-1 {
   background: url(/Users/andreas/Documents/FCC/Portfolio/projects1.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .tile-2 {
   background: url(/Users/andreas/Documents/FCC/Portfolio/projects2.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .tile-3 {
   background: url(/Users/andreas/Documents/FCC/Portfolio/projects3.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .tile-4 {
   background: url(/Users/andreas/Documents/FCC/Portfolio/projects4.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .tile-5 {
   background: url(/Users/andreas/Documents/FCC/Portfolio/projects5.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .tile-6 {
   background: url(/Users/andreas/Documents/FCC/Portfolio/projects6.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -150,4 +171,11 @@ h2 {
 img {
   text-align: center;
   width: 15vw;
+}
+
+@media (max-width: 500px){
+  #contact {
+    height: auto;
+    padding: 4vw;
+  }
 }
